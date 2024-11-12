@@ -2105,6 +2105,9 @@ main(int argc, char *argv[])
 	case 'v':
 		die("%s " VERSION "\n", argv0);
 		break;
+	case 'd':
+		die("%s compiled: " __DATE__ "\n", argv0);
+		break;
 	default:
 		usage();
 	} ARGEND;
